@@ -1,7 +1,7 @@
 CREATE DATABASE IF NOT EXISTS db;
 USE db;
 
-SET auto_increment_increment = 2;
+SET GLOBAL auto_increment_increment = 2;
 
 CREATE TABLE IF NOT EXISTS id_test (
 	id INT AUTO_INCREMENT PRIMARY KEY,

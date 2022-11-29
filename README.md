@@ -8,8 +8,9 @@ We achive this by letting the the MySQL database use either odd or even numbers 
 This can be done by setting
 
 ```sql
-SET auto_increment_increment = 2;
+SET GLOBAL auto_increment_increment = 2;
 ```
+Note: I have not got this to work without the GLOBAL flag, when initializing from the docker-compose file.
 
 This will increment by 2 each time.
 We can also set the starting value for the increment with:
